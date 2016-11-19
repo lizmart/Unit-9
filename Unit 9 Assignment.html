@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Unit 9</title>
+</head>
+
+<body>
+
+<!-- Problem 1 Start-->
+
+<h1 id="hello">Hello World!</h1>
+
+<button onclick="myFunction()">Change Text</button>
+
+
+<script>
+
+function myFunction() {
+    document.getElementById("hello").innerHTML = "Good Night World!";
+}
+</script>
+
+<!-- Problem 1 End-->
+
+<!-- Problem 2 Start-->
+
+<h3 onMouseOver="highlight()" onMouseOut="unhighlight()">Mouse over here to highlight the bold words red.</h3></p>  
+
+<p>
+<strong>We</strong> have just started <strong>this</strong> section for the users (<strong>beginner</strong> to intermediate) who want to work with <strong>various</strong> JavaScript <strong>problems</strong> and write scripts online to <strong>test</strong> their JavaScript <strong>skill</strong>.
+</p>
+
+<script>
+
+var wordItems;  
+window.onload = wordItems();  
+   
+
+function wordItems()   
+{  
+  wordItems = document.getElementsByTagName('strong');   
+}  
+  
+function highlight()   
+{  
+   for (var i=0; i<wordItems.length; i++)  
+   {                                                      
+    wordItems[i].style.color = "red";  
+    }  
+}  
+  
+ 
+function unhighlight()  
+{  
+  for (var i=0; i<wordItems.length; i++)   
+  {  
+       wordItems[i].style.color = "black";  
+  }  
+}  
+
+
+</script>
+
+<!-- Problem 2 End-->
+</body>
+</html>
